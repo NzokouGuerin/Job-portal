@@ -1,0 +1,275 @@
+
+ /* NAME: NZOKOU GUERIN JUNIOR
+DATE: 02/12/2023
+THEME: PHP PROJECT(FRONT-END: HOME PAGE)  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Codes for the nav-bar and logo*/
+.header{
+    z-index: 1;
+    position: absolute;
+    margin: -50px 0 6px 0;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    background-color: white;
+    height: 40px;
+}
+
+.header .logo{
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+.logo h1{
+    transform: translateY(-30px);
+    font-size: 40px;
+    color: blue;
+}
+.logo h1 span{
+    font-size: 60px;
+    color: black;
+}
+
+.header .nav{
+    float: right;
+    font-size: 15px;
+    padding-right: 100px;
+    margin: 10px;
+}
+
+.header .nav ul{
+    list-style-type: none;
+    display: inline-flex;
+
+}
+.header .nav ul a{
+    content: "";
+    margin: 15px;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+.active{
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+.active:hover::before{
+    content: "";
+    width: 0;
+    position: relative;
+}
+.header .nav ul a:before{
+    content: "";
+    height: 3px;
+    background-color: rgb(245, 63, 94);
+    width: 0;
+    transition: 0.4s ease;
+    position: absolute;
+    bottom: -4px;
+}
+
+.header .nav ul a:hover::before{
+    width: 100%;
+    background-color: blue;
+}
+
+.header .nav ul button{
+    width: 100px;
+    background-color: rgb(245, 63, 94);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.header .nav ul button:hover{
+    transform: scale(1.04);
+    border: transparent;
+    box-shadow: 1px 2px 3px 2px  rgb(245, 63, 94);
+}
+
+/* for the backgorund of theh image */
+.back{
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 10px 20px 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.img{
+    float: left;
+    object-fit: cover;
+}
+
+.img1{
+    background-color: white;
+    width: 300px;
+    height: 460px;
+}
+
+.img2{
+    width:300px;
+    height: 460px;
+}
+
+.words{
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    margin: 60px 0 20px -05px;
+    background-color: blue;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    width: 630px;
+    height: 450px;
+    transform: translateX(50px);
+    border-left: 7px solid black;
+}
+
+.text{
+    margin: 150px 10px 50px 50px;
+    color: white;
+    font-size: 30px;
+}
+
+.Bbtn button{
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+    border: transparent;
+    border-radius: 5px;
+    margin-left: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(180, 176, 176);
+    color: rgb(70, 67, 67);
+}
+
+.Bbtn button:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 2px 2px 2px whitesmoke;
+}
+
+/* Categories of jobs */
+.categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 250px 0 20px 0;
+    width: 100%;
+    background-color: rgba(224, 204, 204, 0.397);
+}
+.h1cate h1{
+    margin: 20px;
+    font-size: 25px;
+    transform: translate(0, 200px);
+    color: grey;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h1cate h1:before{
+    content: "";
+    height: 3px;
+    bottom: -3px;
+    width: 05%;
+    position: absolute;
+    background-color: grey;
+    align-self: center;
+}
+.categories .card{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.466);
+    border-radius: 5px;
+}
+.categories .card img{
+    transform: translate(100px, 20px);
+    width: 100px;
+    height: 80px;
+    position: relative;
+    justify-self: center;
+    object-fit: cover;
+}
+.categories .card h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 17px;
+}
+
+.categories .card p{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    color: rgb(126, 122, 122);
+}
+.categories .card button{
+    width: 150px;
+    height: 23px;
+    text-align: center;
+    border: 0.3px solid rgba(128, 128, 128, 0.521);
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 70px;
+    border-radius: 5px;
+}
+
+.categories .card button:hover{
+    transform: scale(1.06);
+    background-color: blue;
+    color: wheat;
+    border: transparent;
+    
+}
+
+/* Why Us CSS */
+.whyUs{
+    height: 400px;
+    margin-top: 170px;
+    display: flex;
+}
+.whyUs .textPrt{
+    font-size: 15px;
+    width: 700px;
+    height: 200px;
+    margin: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transform: translateX(40px);
+}
+.whyUs .textPrt h1{
+    text-align: center;
+    margin: 25px;
+    font-size: 50px;
+    color: blue;
+}
+.whyUs .textPrt p{
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(44, 40, 40);
+}
+
+.whyUs .imgPrt{
+    float: left;
+    transform: translate(200px, 0);
+}
+
+.whyUs .imgPrt img{
+    object-fit: cover;
+    width: 700px;
+    height: 370px;
+    transform: translate(-200px,-70px);
+    margin-right: -120px;
+}
+
