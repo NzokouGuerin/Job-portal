@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+/* Codes for the nav-bar and logo*/
+.header{
+    z-index: 1;
+    position: absolute;
+    margin: 05px 0 0px 0;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    background-color: white;
+    height: 40px;
+}
+
+.header .logo{
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+.logo h1{
+    transform: translateY(-30px);
+    font-size: 40px;
+    color: blue;
+}
+.logo h1 span{
+    font-size: 60px;
+    color: black;
+}
+
+.header .nav{
+    float: right;
+    font-size: 15px;
+    padding-right: 100px;
+    margin: 10px;
+}
+
+.header .nav ul{
+    list-style-type: none;
+    display: inline-flex;
+
+}
+.header .nav ul a{
+    content: "";
+    margin: 15px;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+.active{
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+.active:hover::before{
+    content: "";
+    width: 0;
+    position: relative;
+}
+.header .nav ul a:before{
+    content: "";
+    height: 3px;
+    background-color: rgb(245, 63, 94);
+    width: 0;
+    transition: 0.4s ease;
+    position: absolute;
+    bottom: -4px;
+}
+
+.header .nav ul a:hover::before{
+    width: 100%;
+    background-color: blue;
+}
+
+.header .nav ul button{
+    width: 100px;
+    background-color: rgb(245, 63, 94);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.header .nav ul button:hover{
+    transform: scale(1.04);
+    border: transparent;
+    box-shadow: 1px 2px 3px 2px  rgb(245, 63, 94);
+}
+/*** codes for the first UI prt of the abt page ****/
+.prt1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    padding: 7px;
+    transform: translateY(100px);
+}
+
+.prt1 .logoPrt{
+    margin: 10px 5px 10px 150px;
+}
+
+.prt1 .logoPrt h1{
+    font-size: 80px;
+    color: blue;
+}
+.prt1 .logoPrt h1 span{
+    font-size: 90px;
+    color: black;
+}
+
+.prt1 .descriptionPrt{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin: 10px;
+    text-align: justify;
+    margin: 40px 5px 20px 100px;
+    font-size: 17px;
+}
+
+/*** codes for the second UI prt of the abt page ****/
+.prt2H1{
+    font-size: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: blue;
+    margin-top: 250px;
+    position: relative;
+    margin-bottom: -70px;
+}
+.prt2H1:before{
+    content: "";
+    width: 5px;
+    height: 2px;
+    bottom: -2;
+    color: black;
+    position: absolute;
+}
+.prt2{
+    margin: 100px;
+    display: flex;
+}
+
+.prt2 .Crd{
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid rgb(196, 192, 192);
+    margin: 60px;
+    font-size: 17px;
+}
+.prt2 .Crd h2{
+    color: blue;
+    margin: 5px;
+    font-size: 17px;
+}
+.prt2 .Crd img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.DescBack{
+    background-color: rgba(0, 0, 255, 0.356);
+    height: 140px;
+}
+
+/****  THRD PRT *****/
+.thrdPrt{
+    margin: 50px;
+}
+.thrdPrt .Heading h1{
+    text-align: center;
+    font-size: 23px;
+    color: blue;
+    margin: 10px;
+}
+
+.thrdPrt .Heading p{
+    margin: 5px;
+    text-align: center;
+}
+.thrdPrt img{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.headHead h1{
+    text-align: center;
+    margin: 10px;
+    color: blue;
+    font-size: 22px;
+}
+.empCrd{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+}
+
+.empCrd .crd{
+    margin: 10px;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+.empCrd .crd p{
+    background-color:  rgba(0, 0, 255, 0.705);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.empCrd .crd:hover p{
+    background-image: linear-gradient(to right,blue, grey);
+    opacity: 1;
+}
+
+/****** comment section ******/
+.comment-prt{
+    margin-top: 120px;
+    position: absolute;
+    display: flex
+}
+.cmt-head h1{
+    position: relative;
+    font-size: 25px;
+    color: blue;
+    margin: 20px;
+    top: 100px;
+}
+.comment-prt .cmt-crd1{
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+.comment-prt .cmt-crd1 img{
+    width: 250px;
+    height: 250px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    object-fit: cover;
+    border: 2px solid grey;
+}
+
+.comment-prt .cmt-crd1 .p-container{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    border: 3px solid grey;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    font-size: 15px;
+    padding: 10px;
+    transform: translate(20px, 50px);
+    background-image: linear-gradient(to right, blue, rgba(42, 39, 230, 0.877));
+    color: white;
+}
+
+.comment-prt .cmt-crd1 .p-container p{
+    padding-top: 50px;
+}

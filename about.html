@@ -1,0 +1,113 @@
+<!---   
+*NAME:  NZOKOU GUERIN JUNIOR
+*TOPIC: About page of job portal
+*DATE: 25/12/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css"></link>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1><span>G-</span>Work</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="about.html" class="active"> About  </a></li>
+                <li><a href="categories.html"> Categories </a></li>
+                <li><a href="#"> Post Job </a></li>
+                <li><a href="#"> Account </a></li>
+                <li> <button> LOGIN </button></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="prt1">
+        <div class="logoPrt">
+            <h1><span>G-</span>Work</h1>
+        </div>
+        <div class="descriptionPrt">
+            <p>We are a company based in the help in the finding of various jobs and employees in any domain an category. We help both the private individuals and the company to find what they are seeking for for their good.
+                We do all our best to do what is necessary to provide the greatsest satisfaction.
+            </p>
+        </div>
+    </div>
+
+    <h1 class="prt2H1"> Our Services </h1>
+    <div class="prt2">
+       <div class="Crd">
+       <img src="icon1.png" alt="">
+       <div class="DescBack">
+       <h2> Organisations </h2>
+       <p> We give the possibility to organisations to post the different employments the are seeking for and to advertise their products</p></div>
+       </div>
+        <div class="Crd">
+       <img src="icon3.jpg" alt="">
+       <div class="DescBack">
+       <h2> Job seekers </h2>
+       <p> We give the possibility to the different job seekers to search for jobs in various organisations and various fields.</p></div>
+    </div>
+</div>
+
+<div class="thrdPrt">
+    <div class="Heading"><h1> Our Team </h1>
+    <p> Here are the head of our departments </p></div>
+    <img src="team.jpg" alt="">
+    <div class="headHead">
+        <h1> Head Departments </h1>
+    </div>
+    <div class="empCrd">
+        <div class="crd">
+            <img src="emp1.jpg" alt="">
+            <p> Mathew Grims</p>
+        </div>
+        <div class="crd">
+            <img src="emp2.jpg" alt="">
+            <p> Alendra Dolfire </p>
+        </div>
+        <div class="crd">
+            <img src="emp3.jpg" alt="">
+            <p> Jessica Denzel </p>
+        </div>
+        <div class="crd">
+            <img src="emp4.jpg" alt="">
+            <p> Fabrice Deporto </p>
+        </div>
+    </div>
+</div>
+
+<div class="cmt-head"><h1>Our <span>Comments</span></h1></div>
+<div class="comment-prt">
+    <div class="cmt-crd1">
+    <div class="p-container">
+    <p> Thanks to this website i was able to find the best job tht feets me in a very good organisations and a with a good position</p></div>
+    <img src="emp2.jpg" alt=""></div>
+    <div class="cmt-crd1">
+    <div class="p-container">
+    <p> Thanks to this website i was able to find the best job tht feets me in a very good organisations and a with a good position</p></div>
+    <img src="emp4.jpg" alt=""></div>
+</div>
+
+<script>
+    ScrollReveal({ reset: true ,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+    }
+    );
+
+    ScrollReveal().reveal('.logoPrt', {delay: 200, origin: 'left'});
+    ScrollReveal().reveal('.descriptionPrt', {delay: 200, origin: 'right'});
+    ScrollReveal().reveal('.prt2', {delay: 200, origin: 'left', interval: 200});
+    ScrollReveal().reveal('.thrdPrt',img, {delay: 200, origin: 'top'});
+    ScrollReveal().reveal('.empCrd',{delay: 200, origin: 'bottom', interval: 200});
+</script>
+</body>
+</html>
